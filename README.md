@@ -31,7 +31,7 @@ sistema_prolog/
 
 ---
 
-### 🔹 Modo de Teste (sem interação)
+### 🔹 Modo de Teste
 1. Carregue a base, motor e um dos perfis de teste:
   ?- [base_conhecimento, motor, perfil_teste_1, main].
 2. Execute a recomendação:
