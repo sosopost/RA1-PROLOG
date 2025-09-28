@@ -37,6 +37,9 @@ sudo add-apt-repository ppa:swi-prolog/stable
 sudo apt update
 sudo apt install swi-prolog
 ```
+---
+## ▶️ Como Executar
+
 ### Modo interativo
 1. Abra o SWI-Prolog na pasta src
 ```bash
@@ -78,24 +81,6 @@ Também é possível testar o sistema diretamente no navegador via **SWISH**:
    ?- iniciar_test.
    ```
 ---
-
-## ▶️ Como Executar
-### 🔹 Modo Interativo
-1. Abra o SWI-Prolog no diretório do projeto.
-2. Carregue o programa principal:
-   ```prolog
-   ?- [main].
-3. Inicie o sistema:
-   ?- iniciar.
-4. Responda às perguntas digitando s (sim) ou n (não)
-
----
-
-### 🔹 Modo de Teste
-1. Carregue a base, motor e um dos perfis de teste:
-  ?- [base_conhecimento, motor, perfil_teste_1, main].
-2. Execute a recomendação:
-  ?- recomenda(R), exibe_resultado(R).
 
 ## 📊 Trilhas de Especialização Consideradas
 Ciência de Dados;
