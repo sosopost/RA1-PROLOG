@@ -18,6 +18,66 @@ sistema_prolog/
 
 
 ---
+### ✔️Requisitos
+- SWI-Prolog (recomenda-se a versão estável mais recente)
+- ou SWISH online (https://swish.swi-prolog.org).
+
+### Instalação (Windows)
+1. Baixe o instalador em: página oficial de downloads do SWI-Prolog (https://www.swi-prolog.org/download/devel).  
+2. Execute o instalador e marque a opção de adicionar ao `PATH`.  
+3. Abra `PowerShell` e rode `swipl` para confirmar a instalação.  
+
+### macOS
+```bash
+brew install swi-prolog 
+```
+### ubuntu/debian
+```bash
+sudo add-apt-repository ppa:swi-prolog/stable
+sudo apt update
+sudo apt install swi-prolog
+```
+### Modo interativo
+1. Abra o SWI-Prolog na pasta src
+```bash
+cd trilha_academica
+swipl
+```
+2. ?- consult('sistema.pl').
+3. ?- iniciar.
+4. Responder às perguntas com "s" ou "n".
+5. As trilhas/justificativas serão mostradas.
+
+### Modo de teste (automático)
+1. Abra o SWI-Prolog na pasta src
+```bash
+cd trilha_academica
+swipl
+```
+2. ?- consult('sistema.pl').
+3. ?- consult('testes/perfil_teste_1.pl'). 
+ou ?- consult('testes/perfil_teste_2.pl').
+ou ?- consult('testes/perfil_teste_3.pl').
+4. ?- iniciar_test.
+5. As trilhas/justificativas serão mostradas.
+
+### Rodar online (sem instalar nada)
+
+Também é possível testar o sistema diretamente no navegador via **SWISH**:
+
+1. Acesse [SWISH](https://swish.swi-prolog.org).
+2. Crie um novo programa (New → Program).
+3. Copie e cole o conteúdo de `sistema.pl`.
+   - Para rodar em modo de teste, cole também o conteúdo de `testes/perfil_teste_X.pl`, logo depois do código de `sistema.pl`.
+4. Clique em **Run!** ou execute no console:
+   ```prolog
+   ?- iniciar.
+   ```
+   ou para o modo teste:
+   ```prolog
+   ?- iniciar_test.
+   ```
+---
 
 ## ▶️ Como Executar
 ### 🔹 Modo Interativo
